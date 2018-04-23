@@ -1,5 +1,5 @@
 {
-  "name": "ng2-notify-popup",
+  "name": "turbo-notify-popup",
   "version": "0.1.25",
   "scripts": {
     "build": "gulp build",
@@ -9,18 +9,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shubhi1407/ng2-notify-popup.git"
+    "url": "https://github.com/turbo-team/turbo-notify-popup.git"
   },
-  "author": {
+  "contributors": [{
+    "name": "Kamil Neczaj",
+    "email": "kneczaj@gmail.com"
+  }, {
     "name": "Shubhangi Gupta",
     "email": "shubhangi140793@gmail.com"
-  },
+  }],
   "keywords": [
-    "angular2", "angular4", "notify", "ng-notify", "angular-notification"
+    "angular2", "angular4", "notify", "ng-notify", "angular-notification", "turbo"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shubhi1407/ng2-notify-popup.git/issues"
+    "url": "https://github.com/turbo-team/turbo-notify-popup/issues"
   },
   "devDependencies": {
     "@angular/common": "^4.0.0",

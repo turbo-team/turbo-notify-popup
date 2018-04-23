@@ -1,5 +1,5 @@
 /* System notifications */
-.ngn {
+.trb-notify {
   color: #FFF;
   cursor: default;
   font-size: 1.3em;
@@ -17,20 +17,20 @@
   -moz-user-select: none;
   -ms-user-select: none; }
 
-.ngn-component {
+.trb-component {
   position: absolute; }
 
-.ngn-top {
+.trb-top {
   top: 0; }
 
-.ngn-bottom {
+.trb-bottom {
   bottom: 0; }
-.ngn-fixed {
+.trb-fixed {
     position: fixed; }
-.ngn-absolute {
+.trb-absolute {
       position: absolute; }
 
-.ngn-dismiss {
+.trb-dismiss {
   background-color: #333;
   border-radius: 15px;
   box-shadow: inset 2px 2px 7px 2px #000;
@@ -48,22 +48,22 @@
   top: 25px;
   width: 30px; }
 
-.ngn-sticky .ngn-dismiss {
+.trb-sticky .trb-dismiss {
   display: block; }
 
-.ngn-dismiss:hover {
+.trb-dismiss:hover {
   background-color: #000; }
 
-.ngn-dismiss:active {
+.trb-dismiss:active {
   background-color: #666; }
 
 /* Reduce notification size for mobile */
 @media only screen and (max-width: 480px) {
-  .ngn {
+  .trb-notify {
     font-size: 1em;
     padding: 12px 25px; }
 
-  .ngn-dismiss {
+  .trb-dismiss {
     font-size: 1em;
     height: 20px;
     line-height: 20px;
@@ -71,67 +71,67 @@
     top: 5px;
     width: 20px; } }
 /* Themes - Default - Pure */
-.ngn-info {
+.trb-info {
   background-color: #0e90d2; }
 
-.ngn-error {
+.trb-error {
   background-color: #dd514c; }
 
-.ngn-success {
+.trb-success {
   background-color: #5eb95e; }
 
-.ngn-warn {
+.trb-warn {
   background-color: #f37b1d; }
 
-.ngn-grimace {
+.trb-grimace {
   background-color: #8058a5; }
 
 /* Themes - Prime */
-.ngn-prime.ngn-info {
+.trb-prime.trb-info {
   background-color: #0033cc; }
 
-.ngn-prime.ngn-error {
+.trb-prime.trb-error {
   background-color: #ff0000; }
 
-.ngn-prime.ngn-success {
+.trb-prime.trb-success {
   background-color: #00cc00; }
 
-.ngn-prime.ngn-warn {
+.trb-prime.trb-warn {
   background-color: #ff9900; }
 
-.ngn-prime.ngn-grimace {
+.trb-prime.trb-grimace {
   background-color: #660099; }
 
 /* Themes - Pastel */
-.ngn-pastel.ngn-info {
+.trb-pastel.trb-info {
   background-color: #7EA7D8; }
 
-.ngn-pastel.ngn-error {
+.trb-pastel.trb-error {
   background-color: #F6989D; }
 
-.ngn-pastel.ngn-success {
+.trb-pastel.trb-success {
   background-color: #82CA9D; }
 
-.ngn-pastel.ngn-warn {
+.trb-pastel.trb-warn {
   background-color: #FDC68A; }
 
-.ngn-pastel.ngn-grimace {
+.trb-pastel.trb-grimace {
   background-color: #A187BE; }
 
 /* Themes - Pitchy */
-.ngn-pitchy.ngn-info {
+.trb-pitchy.trb-info {
   background-color: #003471; }
 
-.ngn-pitchy.ngn-error {
+.trb-pitchy.trb-error {
   background-color: #9E0B0F; }
 
-.ngn-pitchy.ngn-success {
+.trb-pitchy.trb-success {
   background-color: #007236; }
 
-.ngn-pitchy.ngn-warn {
+.trb-pitchy.trb-warn {
   background-color: #A36209; }
 
-.ngn-pitchy.ngn-grimace {
+.trb-pitchy.trb-grimace {
   background-color: #440E62; }
 
 /*# sourceMappingURL=ng-notify.css.map */

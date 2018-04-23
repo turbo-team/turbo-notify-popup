@@ -1,13 +1,15 @@
-# ng2-notify-popup
-##### for Angular 4.x.
-Based on [ ng-notify ](https://matowens.github.io/ng-notify/) for Angular 1.x by Mat Owens
+# turbo-notify-popup
+##### for Angular 5.x.
+Based on
+- [ ng2-notify-popup ](https://github.com/turbo-team/turbo-notify-popup) for Angular 4.x by Shubhangi Gupta
+- [ ng-notify ](https://matowens.github.io/ng-notify/) for Angular 1.x by Mat Owens
 
-## [ View Demo ](https://shubhi1407.github.io/ng2-notify-popup/)
+## [ View Demo ](https://shubhi1407.github.io/turbo-notify-popup/)
 
 ## Installation
 
 ```bash
-$ npm install --save ng2-notify-popup
+$ npm install --save turbo-notify-popup
 ```
 ## Usage
 Configure your System.config
@@ -18,14 +20,14 @@ System.config({
     '@angular/core': 'npm:@angular/core/bundles/core.umd.js',
     "rxjs": "node_modules/rxjs",
     ...
-    'ng2-notify-popup' : 'npm:ng2-notify-popup',
+    'turbo-notify-popup' : 'npm:turbo-notify-popup',
   },
   packages: {        
     'app': {
       main : './main.ts',
       defaultJSExtensions : 'ts'
     },
-    "ng2-notify-popup" : {
+    "turbo-notify-popup" : {
       main:'./index.js',
       defaultExtension : 'js'
     }
@@ -46,7 +48,7 @@ Run `npm install --save web-animations-js`.
 import 'web-animations-js';  
 
 // Import library
-import { NgNotifyPopup } from 'ng2-notify-popup';
+import { TurboNotifyPopup } from 'turbo-notify-popup';
 
 @NgModule({
   declarations: [
@@ -55,7 +57,7 @@ import { NgNotifyPopup } from 'ng2-notify-popup';
   imports: [
     BrowserModule,
     // Add module to imports
-    NgNotifyPopup
+    TurboNotifyPopup
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -68,7 +70,7 @@ Once your library is imported, you can use its Notification service
 ```typescript
 // You can now use this library service to show popup anywhere in angular app
 import { Component } from '@angular/core';
-import { NotificationService } from 'ng2-notify-popup';
+import { NotificationService } from 'turbo-notify-popup';
 
 @Component({
   selector: 'app-root',
@@ -120,7 +122,7 @@ NotificationService.destroy();
 ## Custom type
 You can create your own `type` in CSS as follows
 ```CSS
-.ngn-wild {
+.trb-wild {
   background-color: #f4a460;
   }
 ```
@@ -139,5 +141,5 @@ $ npm run lint
 ```
 
 ## License
-
+MIT © [Kamil Neczaj](mailto:kneczajdev@gmail.com)
 MIT © [Shubhangi Gupta](mailto:shubhangi140793@gmail.com)

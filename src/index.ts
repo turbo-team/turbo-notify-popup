@@ -19,10 +19,10 @@ export * from './services/notification.service';
     providers: [ComponentInjectService],
     entryComponents: [NotificationComponent]
 })
-export class NgNotifyPopup {
+export class TurboNotifyPopup {
     static forRoot(): ModuleWithProviders {
         return {
-            ngModule: NgNotifyPopup,
+            ngModule: TurboNotifyPopup,
             providers: [NotificationService, ComponentInjectService]
         };
     }
