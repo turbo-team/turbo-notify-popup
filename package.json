@@ -19,7 +19,7 @@
     "email": "shubhangi140793@gmail.com"
   }],
   "keywords": [
-    "angular2", "angular4", "notify", "ng-notify", "angular-notification", "turbo"
+    "angular5", "notify", "ng-notify", "angular-notification", "notifications", "turbo"
   ],
   "license": "MIT",
   "bugs": {
@@ -29,14 +29,13 @@
   "module": "turbo-notify-popup.js",
   "typings": "turbo-notify-popup.d.ts",
   "devDependencies": {
-    "@angular/common": "^4.0.0",
-    "@angular/compiler": "^4.0.0",
-    "@angular/animations": "^4.0.3",
-    "@angular/platform-browser": "^4.0.3",
-    "@angular/compiler-cli": "^4.0.0",
-    "@angular/core": "^4.0.0",
-    "@angular/platform-browser": "^4.0.0",
-    "@angular/platform-browser-dynamic": "^4.0.0",
+    "@angular/common": "^5.2.10",
+    "@angular/compiler": "^5.2.10",
+    "@angular/animations": "^5.2.10",
+    "@angular/platform-browser": "^5.2.10",
+    "@angular/compiler-cli": "^5.2.10",
+    "@angular/core": "^5.2.10",
+    "@angular/platform-browser-dynamic": "^5.2.10",
     "@types/jasmine": "2.5.38",
     "@types/node": "~6.0.60",
     "codelyzer": "~2.0.0",
@@ -59,7 +58,7 @@
     "rxjs": "^5.1.0",
     "ts-node": "~2.0.0",
     "tslint": "~4.5.0",
-    "typescript": "~2.2.0",
+    "typescript": "~2.6.1",
     "zone.js": "^0.8.4"
   },
   "engines": {
