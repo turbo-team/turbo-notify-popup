@@ -25,6 +25,9 @@
   "bugs": {
     "url": "https://github.com/turbo-team/turbo-notify-popup/issues"
   },
+  "main":"index.js",
+  "module": "turbo-notify-popup.js",
+  "typings": "turbo-notify-popup.d.ts",
   "devDependencies": {
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",

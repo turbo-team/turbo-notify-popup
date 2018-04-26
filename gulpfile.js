@@ -6,6 +6,7 @@ var gulp = require('gulp'),
   del = require('del'),
   runSequence = require('run-sequence'),
   inlineResources = require('./tools/gulp/inline-resources');
+const fs = require('fs');
 
 const rootFolder = path.join(__dirname);
 const srcFolder = path.join(rootFolder, 'src');
@@ -91,11 +92,14 @@ gulp.task('copy:build', function () {
 });
 
 /**
- * 7. Copy package.json from /src to /dist
+ * 7. Copy package.json to /dist
  */
-gulp.task('copy:manifest', function () {
-  return gulp.src([`${srcFolder}/package.json`])
-    .pipe(gulp.dest(distFolder));
+gulp.task('copy:manifest', function() {
+    const packageJsonPath = `${rootFolder}/package.json`;
+    const packageJson = JSON.parse(fs.readFileSync(packageJsonPath));
+    delete packageJson['scripts'];
+    delete packageJson['devDependencies'];
+    fs.writeFile(`${distFolder}/package.json`, JSON.stringify(packageJson));
 });
 
 /**
