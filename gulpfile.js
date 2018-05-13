@@ -90,7 +90,7 @@ gulp.task('copy:manifest', function() {
     const packageJson = JSON.parse(fs.readFileSync(packageJsonPath));
     delete packageJson['scripts'];
     delete packageJson['devDependencies'];
-    fs.writeFile(`${distFolder}/package.json`, JSON.stringify(packageJson));
+    fs.writeFile(`${distFolder}/package.json`, JSON.stringify(packageJson, null, 2));
 });
 
 /**
